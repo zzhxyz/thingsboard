@@ -164,7 +164,7 @@ export default function AppConfig($provide,
             indigoTheme();
         }
 
-        $mdThemingProvider.setDefaultTheme('default');
+        $mdThemingProvider.setDefaultTheme('tb-dark');
         //$mdThemingProvider.alwaysWatchTheme(true);
     }
 
