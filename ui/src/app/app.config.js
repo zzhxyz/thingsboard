@@ -27,7 +27,7 @@ import mdiIconSet from '../svg/mdi.svg';
 /* eslint-enable import/no-unresolved, import/default */
 
 const PRIMARY_BACKGROUND_COLOR = "#305680";//#2856b6";//"#3f51b5";
-const SECONDARY_BACKGROUND_COLOR = "#527dad";
+const SECONDARY_BACKGROUND_COLOR ="#3F51B5";
 const HUE3_COLOR = "#a7c1de";
 
 /*@ngInject*/
@@ -143,9 +143,12 @@ export default function AppConfig($provide,
         $mdThemingProvider.definePalette('tb-dark-primary', tbDarkPrimaryPalette);
         $mdThemingProvider.definePalette('tb-dark-primary-background', tbDarkPrimaryBackgroundPalette);
 
+        //$mdThemingProvider.theme('default')
+        //    .primaryPalette('tb-primary')
+        //    .accentPalette('tb-accent');
         $mdThemingProvider.theme('default')
-            .primaryPalette('tb-primary')
-            .accentPalette('tb-accent');
+            .primaryPalette('green')
+            .accentPalette('red');
 
         $mdThemingProvider.theme('tb-dark')
             .primaryPalette('tb-dark-primary')
@@ -164,7 +167,8 @@ export default function AppConfig($provide,
             indigoTheme();
         }
 
-        $mdThemingProvider.setDefaultTheme('tb-dark');
+        //$mdThemingProvider.setDefaultTheme('tb-dark');
+        $mdThemingProvider.setDefaultTheme('default');
         //$mdThemingProvider.alwaysWatchTheme(true);
     }
 
